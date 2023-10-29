@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Insight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Book Insight</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h4>Robert Kiyosaki and Sharon Lechter</h4>
+            <p>Rich Dad Poor Dad is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy (financial education), financial independence and building wealth through investing in assets, real estate investing, starting and owning businesses, as well as increasing one's financial intelligence (financial IQ).</p>
+            <button id="remove-book" onclick="removebook(event)">Remove</button>
+        </div>
+        
+    </div>
+
+    <div class="popup-overlay"></div>
+    
+    <div class="popup">
+        <form>
+            <h3>Add Book</h3>
+            <input type="text" placeholder="Title" id="book-title"><br>
+            <input type="text" placeholder="Author" id="book-author"><br>
+            <textarea id="book-description" placeholder="Enter the description" ></textarea>
+        </form> 
+        <button id="add-book">Add</button>
+        <button id="cancel-popup">Cancel</button>
+    </div>
+    
+
+
+    <button id="add-popup">+</button>
+    <script src="index.js"></script>
+</body>
+</html>
